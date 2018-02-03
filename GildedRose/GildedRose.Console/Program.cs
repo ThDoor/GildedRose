@@ -2,9 +2,18 @@
 
 namespace GildedRose.Console
 {
-    class Program
+    public class Program
     {
         IList<Item> Items;
+
+        public Program()
+        {
+
+        }
+        public Program(IList<Item> items)
+        {
+            Items = items ?? new List<Item>();
+        }
         static void Main(string[] args)
         {
             System.Console.WriteLine("OMGHAI!");

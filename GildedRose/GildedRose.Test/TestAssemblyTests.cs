@@ -4,7 +4,7 @@ namespace GildedRose.Tests
 {
     public class TestAssemblyTests
     {
-        [Fact]
+        [Fact(Skip ="not a test")]
         public void TestTheTruth()
         {
             Assert.True(true);
