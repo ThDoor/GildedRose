@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using GildedRose.Console.Strategy;
 
 namespace GildedRose.Console
 {
@@ -9,7 +10,7 @@ namespace GildedRose.Console
 
         public Program()
         {
-            _inventory = new Inventory();
+            _inventory = new Inventory(new UpdateQualityStrategyFactory());
         }     
 
         static void Main(string[] args)
