@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheeseShould.cs" />
+    <Compile Include="ConjuredShould.cs" />
     <Compile Include="LegendaryShould.cs" />
     <Compile Include="StandardDecreasingShould.cs" />
     <Compile Include="TestAssemblyTests.cs" />

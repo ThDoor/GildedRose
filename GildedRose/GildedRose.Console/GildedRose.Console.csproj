@@ -45,6 +45,7 @@
     <Compile Include="IInventory.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Strategy\Cheese.cs" />
+    <Compile Include="Strategy\Conjured.cs" />
     <Compile Include="Strategy\IUpdateQualityStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

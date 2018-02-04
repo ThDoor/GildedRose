@@ -17,6 +17,9 @@
                 case ItemType.Ticket:
                     strategy = new Ticket();
                     break;
+                case ItemType.Conjured:
+                    strategy = new Conjured();
+                    break;
                 default:
                     strategy = new StandardDecreasing();
                     break;
@@ -38,6 +41,9 @@
                 case "Backstage passes to a TAFKAL80ETC concert":
                     result = ItemType.Ticket;
                     break;
+                case "Conjured Mana Cake":
+                    result = ItemType.Conjured;
+                    break;
                 default:
                     result = ItemType.Standard;
                     break;
@@ -51,6 +57,7 @@
         Legendary,
         Cheese,
         Ticket,
+        Conjured,
         Standard
     }
 }

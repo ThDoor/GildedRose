@@ -39,6 +39,17 @@ namespace GildedRose.Test
             Assert.IsType<Ticket>(result);
         }
         [Fact]
+        public void ReturnConjuredWhenItemNameIs()
+        {
+            var name = "Conjured Mana Cake";
+
+            var sut = new UpdateQualityStrategyFactory();
+
+            var result = sut.Create(name);
+
+            Assert.IsType<Conjured>(result);
+        }
+        [Fact]
         public void ReturnStandardWhenItemNameIs()
         {
             var name = "any name";
