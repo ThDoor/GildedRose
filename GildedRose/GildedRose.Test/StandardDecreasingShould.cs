@@ -42,5 +42,24 @@ namespace GildedRose.Test
             Assert.Equal(quality-1,item.Quality);
         }
 
+        [Theory]
+        [InlineData(5)]
+        [InlineData(1)]
+        [InlineData(0)]
+        [InlineData(-1)]
+        public void NotDecreaseQualityBellow0(int sellIn)
+        {
+            //arrange
+            int quality = 0;
+
+            var item = new Item { Name = "n/a", Quality = quality, SellIn = sellIn };
+            var sut = new StandardDecreasing();
+
+            //act
+            sut.UpdateQuality(item);
+
+            //assert
+            Assert.Equal(quality, item.Quality);
+        }        
     }
 }

@@ -243,5 +243,24 @@ namespace GildedRose.Test
             Assert.Equal(quality - 2, items[0].Quality);
             Assert.Equal(sellIn - 1, items[0].SellIn);
         }
+
+        [Theory]
+        [InlineData(2)]
+        [InlineData(0)]
+        [InlineData(-2)]
+        public void NotDecreaseQualityOfAnyBelow0(int sellIn)
+        {
+            int quality = 0;
+            //arrange            
+            var items = new List<Item> { new Item { Name = any, SellIn = sellIn, Quality = quality } };
+            var sut = new Inventory();
+
+            //act
+            sut.UpdateQuality(items);
+
+            //assert
+            Assert.Equal(quality, items[0].Quality);
+            Assert.Equal(sellIn - 1, items[0].SellIn);
+        }
     }
 }
