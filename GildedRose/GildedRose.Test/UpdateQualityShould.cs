@@ -210,6 +210,7 @@ namespace GildedRose.Test
         [InlineData(15)]
         [InlineData(7)]
         [InlineData(2)]
+        [InlineData(1)]
         public void DecreaseQualityOfAnyWithOneWhenSellInGt0(int sellIn)
         {
             int quality = 25;
@@ -221,7 +222,7 @@ namespace GildedRose.Test
             sut.UpdateQuality(items);
 
             //assert
-            Assert.Equal(quality-1, items[0].Quality);
+            Assert.Equal(quality - 1, items[0].Quality);
             Assert.Equal(sellIn - 1, items[0].SellIn);
         }
 
