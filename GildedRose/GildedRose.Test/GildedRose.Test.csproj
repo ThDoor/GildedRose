@@ -56,9 +56,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheeseShould.cs" />
+    <Compile Include="LegendaryShould.cs" />
     <Compile Include="StandardDecreasingShould.cs" />
     <Compile Include="TestAssemblyTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicketShould.cs" />
     <Compile Include="UpdateQualityShould.cs" />
   </ItemGroup>
   <ItemGroup>

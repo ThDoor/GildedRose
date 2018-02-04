@@ -44,10 +44,13 @@
   <ItemGroup>
     <Compile Include="IInventory.cs" />
     <Compile Include="Inventory.cs" />
+    <Compile Include="Strategy\Cheese.cs" />
     <Compile Include="Strategy\IUpdateQualityStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategy\Legendary.cs" />
     <Compile Include="Strategy\StandardDecreasing.cs" />
+    <Compile Include="Strategy\Ticket.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
