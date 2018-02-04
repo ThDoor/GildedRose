@@ -21,10 +21,10 @@ namespace GildedRose.Test
             int quality = 80;
 
             var items = new List<Item> { new Item { Name = legendary, SellIn = sellIn, Quality = quality } };
-            var sut = new Program(items);
+            var sut = new Program();
 
             //act
-            sut.UpdateQuality();
+            sut.UpdateQuality(items);
 
             //assert
             Assert.Equal(quality, items[0].Quality);
@@ -37,10 +37,10 @@ namespace GildedRose.Test
             int quality = 80;
 
             var items = new List<Item> { new Item { Name = legendary, SellIn = sellIn, Quality = quality } };
-            var sut = new Program(items);
+            var sut = new Program();
 
             //act
-            sut.UpdateQuality();
+            sut.UpdateQuality(items);
 
             //assert
             Assert.Equal(sellIn, items[0].SellIn);
@@ -53,10 +53,10 @@ namespace GildedRose.Test
             int quality = 25;
 
             var items = new List<Item> { new Item { Name = concert, SellIn = sellIn, Quality = quality } };
-            var sut = new Program(items);
+            var sut = new Program();
 
             //act
-            sut.UpdateQuality();
+            sut.UpdateQuality(items);
 
             //assert
             Assert.Equal(0, items[0].Quality);
@@ -72,10 +72,10 @@ namespace GildedRose.Test
             int quality = 25;
 
             var items = new List<Item> { new Item { Name = concert, SellIn = sellIn, Quality = quality } };
-            var sut = new Program(items);
+            var sut = new Program();
 
             //act
-            sut.UpdateQuality();
+            sut.UpdateQuality(items);
 
             //assert
             Assert.Equal(quality+1, items[0].Quality);
@@ -94,10 +94,10 @@ namespace GildedRose.Test
             int quality = 25;
 
             var items = new List<Item> { new Item { Name = concert, SellIn = sellIn, Quality = quality } };
-            var sut = new Program(items);
+            var sut = new Program();
 
             //act
-            sut.UpdateQuality();
+            sut.UpdateQuality(items);
 
             //assert
             Assert.Equal(quality + 2, items[0].Quality);
@@ -116,10 +116,10 @@ namespace GildedRose.Test
             int quality = 25;
 
             var items = new List<Item> { new Item { Name = concert, SellIn = sellIn, Quality = quality } };
-            var sut = new Program(items);
+            var sut = new Program();
 
             //act
-            sut.UpdateQuality();
+            sut.UpdateQuality(items);
 
             //assert
             Assert.Equal(quality + 3, items[0].Quality);
@@ -135,10 +135,10 @@ namespace GildedRose.Test
             int quality = 50;
             //arrange            
             var items = new List<Item> { new Item { Name = concert, SellIn = sellIn, Quality = quality } };
-            var sut = new Program(items);
+            var sut = new Program();
 
             //act
-            sut.UpdateQuality();
+            sut.UpdateQuality(items);
 
             //assert
             Assert.Equal(quality, items[0].Quality);
@@ -155,10 +155,10 @@ namespace GildedRose.Test
             int quality = 25;
 
             var items = new List<Item> { new Item { Name = cheese, SellIn = sellIn, Quality = quality } };
-            var sut = new Program(items);
+            var sut = new Program();
 
             //act
-            sut.UpdateQuality();
+            sut.UpdateQuality(items);
 
             //assert
             Assert.Equal(quality + 1, items[0].Quality);
@@ -174,10 +174,10 @@ namespace GildedRose.Test
             int quality = 25;
 
             var items = new List<Item> { new Item { Name = cheese, SellIn = sellIn, Quality = quality } };
-            var sut = new Program(items);
+            var sut = new Program();
 
             //act
-            sut.UpdateQuality();
+            sut.UpdateQuality(items);
 
             //assert
             Assert.Equal(quality + 2, items[0].Quality);
@@ -195,10 +195,10 @@ namespace GildedRose.Test
             int quality = 50;
             //arrange            
             var items = new List<Item> { new Item { Name = cheese, SellIn = sellIn, Quality = quality } };
-            var sut = new Program(items);
+            var sut = new Program();
 
             //act
-            sut.UpdateQuality();
+            sut.UpdateQuality(items);
 
             //assert
             Assert.Equal(quality, items[0].Quality);
@@ -215,10 +215,10 @@ namespace GildedRose.Test
             int quality = 25;
             //arrange            
             var items = new List<Item> { new Item { Name = any, SellIn = sellIn, Quality = quality } };
-            var sut = new Program(items);
+            var sut = new Program();
 
             //act
-            sut.UpdateQuality();
+            sut.UpdateQuality(items);
 
             //assert
             Assert.Equal(quality-1, items[0].Quality);
@@ -233,10 +233,10 @@ namespace GildedRose.Test
             int quality = 25;
             //arrange            
             var items = new List<Item> { new Item { Name = any, SellIn = sellIn, Quality = quality } };
-            var sut = new Program(items);
+            var sut = new Program();
 
             //act
-            sut.UpdateQuality();
+            sut.UpdateQuality(items);
 
             //assert
             Assert.Equal(quality - 2, items[0].Quality);
