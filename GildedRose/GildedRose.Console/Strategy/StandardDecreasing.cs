@@ -11,8 +11,11 @@ namespace GildedRose.Console.Strategy
             {
                 item.Quality--;
             }
+            else
+            {
+                item.Quality -= 2;
+            }           
 
-            // never decrease quality below zero
             if (item.Quality < 0)
             {
                 item.Quality = 0;
