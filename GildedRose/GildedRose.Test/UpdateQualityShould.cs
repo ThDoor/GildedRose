@@ -21,7 +21,7 @@ namespace GildedRose.Test
             int quality = 80;
 
             var items = new List<Item> { new Item { Name = legendary, SellIn = sellIn, Quality = quality } };
-            var sut = new Program();
+            var sut = new Inventory();
 
             //act
             sut.UpdateQuality(items);
@@ -37,7 +37,7 @@ namespace GildedRose.Test
             int quality = 80;
 
             var items = new List<Item> { new Item { Name = legendary, SellIn = sellIn, Quality = quality } };
-            var sut = new Program();
+            var sut = new Inventory();
 
             //act
             sut.UpdateQuality(items);
@@ -53,7 +53,7 @@ namespace GildedRose.Test
             int quality = 25;
 
             var items = new List<Item> { new Item { Name = concert, SellIn = sellIn, Quality = quality } };
-            var sut = new Program();
+            var sut = new Inventory();
 
             //act
             sut.UpdateQuality(items);
@@ -72,7 +72,7 @@ namespace GildedRose.Test
             int quality = 25;
 
             var items = new List<Item> { new Item { Name = concert, SellIn = sellIn, Quality = quality } };
-            var sut = new Program();
+            var sut = new Inventory();
 
             //act
             sut.UpdateQuality(items);
@@ -94,7 +94,7 @@ namespace GildedRose.Test
             int quality = 25;
 
             var items = new List<Item> { new Item { Name = concert, SellIn = sellIn, Quality = quality } };
-            var sut = new Program();
+            var sut = new Inventory();
 
             //act
             sut.UpdateQuality(items);
@@ -116,7 +116,7 @@ namespace GildedRose.Test
             int quality = 25;
 
             var items = new List<Item> { new Item { Name = concert, SellIn = sellIn, Quality = quality } };
-            var sut = new Program();
+            var sut = new Inventory();
 
             //act
             sut.UpdateQuality(items);
@@ -135,7 +135,7 @@ namespace GildedRose.Test
             int quality = 50;
             //arrange            
             var items = new List<Item> { new Item { Name = concert, SellIn = sellIn, Quality = quality } };
-            var sut = new Program();
+            var sut = new Inventory();
 
             //act
             sut.UpdateQuality(items);
@@ -155,7 +155,7 @@ namespace GildedRose.Test
             int quality = 25;
 
             var items = new List<Item> { new Item { Name = cheese, SellIn = sellIn, Quality = quality } };
-            var sut = new Program();
+            var sut = new Inventory();
 
             //act
             sut.UpdateQuality(items);
@@ -174,7 +174,7 @@ namespace GildedRose.Test
             int quality = 25;
 
             var items = new List<Item> { new Item { Name = cheese, SellIn = sellIn, Quality = quality } };
-            var sut = new Program();
+            var sut = new Inventory();
 
             //act
             sut.UpdateQuality(items);
@@ -195,7 +195,7 @@ namespace GildedRose.Test
             int quality = 50;
             //arrange            
             var items = new List<Item> { new Item { Name = cheese, SellIn = sellIn, Quality = quality } };
-            var sut = new Program();
+            var sut = new Inventory();
 
             //act
             sut.UpdateQuality(items);
@@ -215,7 +215,7 @@ namespace GildedRose.Test
             int quality = 25;
             //arrange            
             var items = new List<Item> { new Item { Name = any, SellIn = sellIn, Quality = quality } };
-            var sut = new Program();
+            var sut = new Inventory();
 
             //act
             sut.UpdateQuality(items);
@@ -233,7 +233,7 @@ namespace GildedRose.Test
             int quality = 25;
             //arrange            
             var items = new List<Item> { new Item { Name = any, SellIn = sellIn, Quality = quality } };
-            var sut = new Program();
+            var sut = new Inventory();
 
             //act
             sut.UpdateQuality(items);
